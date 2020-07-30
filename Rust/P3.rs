@@ -13,7 +13,7 @@ fn main(){
 // The smallest factor will always be prime
 
 fn smallest_factor(n: i64) -> i64{
-    let limit = (n as f64).sqrt().ceil() as i64;
+    let limit = (n as f64).sqrt().floor() as i64;
     
     for x in (3..limit).step_by(2) {
         if n % x == 0  {

@@ -17,7 +17,7 @@ return 0;
 //The smallest found factor of a number will always be prime
 long smallest_factor(long n){
     int i;
-    int limit = ceil(sqrt(n));
+    int limit = floor(sqrt(n));
     for(i = 3; i < limit; i+=2){
         if(n % i == 0){return i;}
     }

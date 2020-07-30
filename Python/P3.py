@@ -1,7 +1,7 @@
 import math
 # smallest factor is always prime
 def smallest_factor( n ):
-    limit = math.ceil(math.sqrt(n))
+    limit = math.floor(math.sqrt(n))
     for x in range(3, limit, 2):
         if n % x == 0:
             return x
