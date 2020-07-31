@@ -4,7 +4,7 @@ fn main(){
     for i in 100..1000 {
         for j in 100..1000{
             t = i*j;
-            if is_palindrome(&t) && t > largest {
+            if is_palindrome(t) && t > largest {
                 largest = t;
             }
         }
@@ -13,9 +13,8 @@ fn main(){
     println!("{}", largest);
 }
 
-fn is_palindrome(num: &i64) -> bool {
+fn is_palindrome(mut n: i64) -> bool {
     let mut divisor: i64 = 1;
-    let mut n = *num;
     while n / divisor >= 10 { divisor *= 10; }
 
     while n != 0 {
