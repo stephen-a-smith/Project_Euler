@@ -1,4 +1,4 @@
-# Project_Euler
+# Project Euler
 My Solutions to the Project Euler Problems
 This is a continuously updated repository, as there are hundreds of problems to work through on Project Euler
 
