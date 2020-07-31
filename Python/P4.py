@@ -17,7 +17,7 @@ def is_palindrome( n ):
 largest = 0
 
 for i in range(100, 1000):
-    for j in range(100, 1000):
+    for j in range(i, 1000): # optimization, reduce duplicate calculations
         temp = i*j
         if is_palindrome(temp) and temp > largest:
             largest = temp

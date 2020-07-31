@@ -3,7 +3,7 @@ public class P4 {
         int largest = 0;    
     
         for(int i = 100; i < 1000; i++){
-            for(int j = 100; j < 1000; j++){
+            for(int j = i; j < 1000; j++){// optimization, reduces calcuations
                 int temp = i*j;
                 if(is_palindrome(temp) && temp > largest){
                     largest = temp;

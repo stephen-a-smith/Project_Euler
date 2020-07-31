@@ -7,7 +7,7 @@ int main(){
     int largest = 0;
     int t;
     for(i = 100; i < 1000; i++){
-        for(j = 100; j < 1000; j++){
+        for(j = i; j < 1000; j++){ //optimization, reduce duplicate calcuations
             t = i*j;
             if(is_palindrome(t) == 1 & t > largest){
                 largest = t;

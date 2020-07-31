@@ -1,9 +1,8 @@
 fn main(){
-    let mut t: i64;
     let mut largest: i64 = 0;
     for i in 100..1000 {
-        for j in 100..1000{
-            t = i*j;
+        for j in i..1000{ //optimization, reduces duplicate calculations
+            let t = i*j;
             if is_palindrome(t) && t > largest {
                 largest = t;
             }
